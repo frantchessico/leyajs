@@ -1,0 +1,22 @@
+#!/usr/bin/env node
+
+const { program } = require('commander');
+const init = require('../commands/init');
+const showCLIVersion = 
+
+// Adicionando o comando para inicializar um novo projeto Node.js
+program
+    .command('init')
+    .description('Inicializa um novo projeto Node.js')
+    .action(init);
+
+// Adicionando o comando para exibir a versão da CLI
+program
+    .command('version')
+    .description('Exibe a versão da CLI')
+    .action(() => {
+        const packageJson = require('../package.json');
+        console.log(`Versão da CLI: ${packageJson.version}`);
+    });
+
+program.parse(process.argv);
