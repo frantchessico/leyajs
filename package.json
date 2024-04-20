@@ -1,6 +1,6 @@
 {
   "name": "leyajs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
   "dependencies": {
     "chalk": "^5.3.0",
@@ -11,5 +11,9 @@
   },
   "bin": {
     "leya": "bin/leya"
-  }
+  },
+  "repository": {
+    "url": "https://github.com/frantchessico/leyajs"
+  },
+  "homepage": "https://github.com/frantchessico/leyajs"
 }
